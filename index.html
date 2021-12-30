@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluten free horoscopes</title>
+    <link rel="stylesheet" href="style.css?1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        #particles-js {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="border-1"></div>
+    <div id="border-2"></div>
+    
+    <main>
+        <section id="header">
+            <svg id="logo" version="1.1" viewBox="0 0 737.34 469.86" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-655.68 -286.5)">
+                    <circle cx="1024.4" cy="521.43" r="155.94" fill="#f3f0ea" stop-color="#000000" stroke-width="3.8556" style="-inkscape-stroke:none"/>
+                    <circle cx="1024.4" cy="521.43" r="229.08" fill="none" stop-color="#000000" stroke="#f3f0ea" stroke-width="11.7"/>
+                    <ellipse id="path3447" transform="scale(-1)" cx="-1024.4" cy="-521.44" rx="364.56" ry="65.751" fill-opacity="0" stop-color="#000000" stroke="#f3f0ea" stroke-dasharray="32.86000061,32.86000061" stroke-dashoffset="12.323" stroke-linejoin="bevel" stroke-width="8.215" style="paint-order:fill markers stroke"/>
+                </g>
+            </svg>
+            
+            <h1>Gluten free horoscopes.</h1>
+        </section>
+        <section id="content">
+            <div id="signs" hx-target="#content" hx-push-url="false">
+                <div class="sign" hx-get="zodiac/aries.html">
+                    <img src="images/aries.svg">
+                    <span>Aries</span>
+                </div>
+                <div class="sign" hx-get="zodiac/taurus.html">
+                    <img src="images/taurus.svg">
+                    <span>Taurus</span>
+                </div>
+                <div class="sign" hx-get="zodiac/gemini.html">
+                    <img src="images/gemini.svg">
+                    <span>Gemini</span>
+                </div>
+                <div class="sign" hx-get="zodiac/cancer.html">
+                    <img src="images/cancer.svg">
+                    <span>Cancer</span>
+                </div>
+                <div class="sign" hx-get="zodiac/leo.html">
+                    <img src="images/leo.svg">
+                    <span>Leo</span>
+                </div>
+                <div class="sign" hx-get="zodiac/virgo.html">
+                    <img src="images/virgo.svg">
+                    <span>Virgo</span>
+                </div>
+                <div class="sign" hx-get="zodiac/libra.html">
+                    <img src="images/libra.svg">
+                    <span>Libra</span>
+                </div>
+                <div class="sign" hx-get="zodiac/scorpio.html">
+                    <img src="images/scorpio.svg">
+                    <span>Scorpio</span>
+                </div>
+                <div class="sign" hx-get="zodiac/sagittarius.html">
+                    <img src="images/sagittarius.svg">
+                    <span>Sagittarius</span>
+                </div>
+                <div class="sign" hx-get="zodiac/capricorn.html">
+                    <img src="images/capricorn.svg">
+                    <span>Capricorn</span>
+                </div>
+                <div class="sign" hx-get="zodiac/aquarius.html">
+                    <img src="images/aquarius.svg">
+                    <span>Aquarius</span>
+                </div>
+                <div class="sign" hx-get="zodiac/pisces.html">
+                    <img src="images/pisces.svg">
+                    <span>Pisces</span>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div hx-get="starsign.html" hx-target="#content" hx-push-url="false">
+                What's my star sign?
+            </div>
+        </section>
+    </main>
+    
+    <div id="starfield">
+        <div id="dot-1" class="dot"></div>
+        <div id="dot-2" class="dot"></div>
+        <div id="dot-3" class="dot"></div>
+        <div id="dot-4" class="dot"></div>
+        <div id="dot-5" class="dot"></div>
+        <div id="circle-1" class="circle"></div>
+        <div id="circle-2" class="circle"></div>
+        <div id="circle-3" class="circle"></div>
+        <div id="circle-4" class="circle"></div>
+        <div id="circle-5" class="circle"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
