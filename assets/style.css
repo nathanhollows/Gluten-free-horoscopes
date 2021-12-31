@@ -344,6 +344,12 @@ progress::-moz-progress-bar {
     margin: auto;
 }
 
+@media (max-width: 720px) {
+    #categories div {
+        width: 100%;
+    }
+}
+
 #categories div:not(:last-of-type) {
     margin-bottom: 1em;
 }
