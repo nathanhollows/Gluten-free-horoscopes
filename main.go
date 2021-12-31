@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	handler "github.com/nathanhollows/Lint/go/pkg/mod/github.com/nathanhollows/gluten-free-horoscopes/handlers"
+	handler "github.com/nathanhollows/gluten-free-horoscopes/handlers"
 )
 
 func main() {
