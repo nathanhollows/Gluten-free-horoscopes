@@ -90,7 +90,13 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 3em;
-    min-height: calc(100vh - 2em);
+    min-height: 100vh;
+}
+
+@media (min-width: 720px) {
+    main {
+        padding-bottom: 6em;
+    }
 }
 
 section#header {
@@ -98,7 +104,7 @@ section#header {
     text-align: center;
 }
 
-#logo {
+section#header svg {
     height: 110px;
     width: auto;
     margin-bottom: 2em;
@@ -138,8 +144,9 @@ section#content {
     }
 }
 
-#signs img {
+#signs img, #signs svg {
     height: 3em;
+    width: auto;
 }
 
 .sign {
@@ -169,6 +176,10 @@ hr {
     cursor: pointer;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /*** Typography ***/
 
 h1 {
@@ -195,6 +206,10 @@ strong {
 
 #content p:not(:last-child) {
     padding-bottom: 1em;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /*** Decorative Elements ***/
@@ -273,6 +288,10 @@ strong {
     top: 26%;
     right: 12%;
 }
+#circle-4 {
+    bottom: 7%;
+    left: 21%;
+}
 #circle-5 {
     top: 11%;
     left: 24%;
@@ -286,9 +305,49 @@ strong {
 
 #path3447 {
     stroke-dashoffset: 0;
-  transition: stroke-dashoffset 300s linear;
+    transition: stroke-dashoffset 300s linear;
 }
 
 #logo:hover #path3447 {
     stroke-dashoffset: 3300%;
+}
+
+progress {
+    background: transparent;
+    color: transparent;
+    height: 13px;
+    border: 2px solid;
+    border-radius: 1em;
+    width: 100%;
+    justify-self: center;
+    margin: auto;
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--light);
+    height: 3px;
+    margin: 3px;
+    border-radius: 7px;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+#categories div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    width: 70%;
+    margin: auto;
+}
+
+#categories div:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+
+#categories span {
+    width: 16ch;
 }

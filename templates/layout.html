@@ -1,0 +1,41 @@
+{{ define "base" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">{{ .title }}</title>
+    <link rel="stylesheet" href="assets/style.css?{{ cssversion }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        #particles-js {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="border-1"></div>
+    <div id="border-2"></div>
+    
+    <main id="main">
+        {{ template "main" .}}
+    </main>
+    
+    <div id="starfield">
+        <div id="dot-1" class="dot"></div>
+        <div id="dot-2" class="dot"></div>
+        <div id="dot-3" class="dot"></div>
+        <div id="dot-4" class="dot"></div>
+        <div id="dot-5" class="dot"></div>
+        <div id="circle-1" class="circle"></div>
+        <div id="circle-2" class="circle"></div>
+        <div id="circle-3" class="circle"></div>
+        <div id="circle-4" class="circle"></div>
+        <div id="circle-5" class="circle"></div>
+    </div>
+    <script src="assets/index.js"></script>
+</body>
+</html>
+{{ end }}

@@ -1,0 +1,42 @@
+{{ define "main" }}
+<section id="header">
+    {{ svg (print "images/" .starsign ".svg")}}
+<h1>{{ .title }}</h1>
+</section>
+
+<section id="content">
+    <p>
+        <strong>{{ .horoscope.Date }}</strong>
+    </p>
+    <p>
+        {{ .horoscope.Text }}
+    </p>
+    <div id="categories">
+        <div>
+            <span>Live</span>
+            <progress max="5" value="{{ .horoscope.Live }}"></progress>
+        </div>
+        <div>
+            <span>Laugh</span>
+            <progress max="5" value="{{ .horoscope.Laugh }}"></progress>
+        </div>
+        <div>
+            <span>Love</span>
+            <progress max="5" value="{{ .horoscope.Love }}"></progress>
+        </div>
+        <div>
+            <span>Luck</span>
+            <progress max="5" value="{{ .horoscope.Luck }}"></progress>
+        </div>
+        <div>
+            <span>Bullshit</span>
+            <progress max="5" value="{{ .horoscope.Bullshit }}"></progress>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <img src="assets/images/back.svg" id="back" hx-get="/" hx-target="#main" hx-swap="innerHTML" hx-push-url="true">
+</section>
+<title id="title" hx-swap-oob="true">{{ .title }}</title>
+{{ end }}
