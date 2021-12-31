@@ -99,6 +99,10 @@ main {
     }
 }
 
+section {
+    padding: 0 1.5em;
+}
+
 section#header {
     font-weight: bold;
     text-align: center;
